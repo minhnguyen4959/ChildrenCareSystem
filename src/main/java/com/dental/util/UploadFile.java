@@ -14,10 +14,17 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 public class UploadFile {
-    private static final String CLOUDINARY_UPLOAD_URL = "https://api.cloudinary.com/v1_1/dck2nnfja/upload";
-    private static final String CLOUDINARY_API_KEY = "337676999889211";
-    private static final String CLOUDINARY_API_SECRET = "8A3jF8gTMLuj8PNUVu5VMZfOcNE";
-    private static final String CLOUDINARY_CLOUD_NAME = "dck2nnfja";
+    // private static final String CLOUDINARY_UPLOAD_URL = "https://api.cloudinary.com/v1_1/dck2nnfja/upload";
+    // private static final String CLOUDINARY_API_KEY = "337676999889211";
+    // private static final String CLOUDINARY_API_SECRET = "8A3jF8gTMLuj8PNUVu5VMZfOcNE";
+    // private static final String CLOUDINARY_CLOUD_NAME = "dck2nnfja";
+
+    //Lấy thông tin ở link
+    //https://console.cloudinary.com/settings/c-e1168b7f5c7b99f933b740c3cebee6/api-keys
+    private static final String CLOUDINARY_UPLOAD_URL = "https://api.cloudinary.com/v1_1/dvlxhj1gw/upload";
+    private static final String CLOUDINARY_API_KEY = "823519499464769";
+    private static final String CLOUDINARY_API_SECRET = "InH7Lc8Dg2TfbffAR80iLSh0W1k";
+    private static final String CLOUDINARY_CLOUD_NAME = "dvlxhj1gw";
 
     public static String getFileName(MultipartFile multipartFile) {
         return System.currentTimeMillis() + "-" + StringUtils.cleanPath(multipartFile.getOriginalFilename());
