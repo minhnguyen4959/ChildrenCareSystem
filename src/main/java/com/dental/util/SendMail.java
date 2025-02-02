@@ -49,7 +49,7 @@
 //    }
 //
 //    public void sendFuncition(String to, String sub, String msg) {
-//        SendMail.SendMail(to, sub, msg, "testerhe141360@gmail.com", "mwjwhrabtqvwpyvd");
+//        SendMail.SendMail(to, sub, msg, "testerhe@gmail.com", "mwjwhrabtqvwpyvd");
 //    }
 //    }
 //
