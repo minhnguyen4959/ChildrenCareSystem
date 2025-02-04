@@ -59,7 +59,7 @@ public interface AppointmentRepository extends JpaRepository<Appointment, Intege
 
     @Transactional
     @Modifying
-    @Query(value = "UPDATE `clinic_dental`.`appointment` SET `doctor_id` = ? WHERE (`appointment_id` = ?)", nativeQuery = true)
+    @Query(value = "UPDATE appointment SET `doctor_id` = ? WHERE (`appointment_id` = ?)", nativeQuery = true)
     void updateAppointmentDoctor(int doctorId, int appointmentId);
 
     int countAppointmentsByDate(Date date);

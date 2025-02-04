@@ -135,6 +135,7 @@ public class UserController {
         return "landing/auth/signup";
     }
 
+    //Bấm submit đăng ký tài khoản
     @PostMapping("/register/save")
     public String registration(@ModelAttribute("user") User user,
                                BindingResult result,
@@ -396,7 +397,8 @@ public class UserController {
             return "admin/user/add-user";
         }
 
-        user.setPassword(passwordEncoder.encode("minh123456789"));
+        //Mật khẩu mặc định khi thêm mới tài khoản staff
+        user.setPassword(passwordEncoder.encode("staff123456789"));
         user.setRole("Staff");
 
         try {

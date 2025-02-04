@@ -146,7 +146,7 @@ public class DoctorController {
             return "admin/doctor/add-doctor";
         }
 
-        user.setPassword(passwordEncoder.encode("minh123456789"));
+        user.setPassword(passwordEncoder.encode("doctor123456789"));
         user.setRole("Doctor");
 
         try {

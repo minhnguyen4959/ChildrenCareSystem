@@ -70,7 +70,7 @@ public class ForgotPasswordController {
         System.out.println("message="+message);
         MimeMessageHelper helper = new MimeMessageHelper(message);
         System.out.println("helper="+helper);
-        helper.setFrom("minhnguyenhhhh@gmail.com","Forgot password");
+        helper.setFrom("binancebozz@gmail.com","Forgot password");
         helper.setTo(email);
 
         String subject = "This is your token";

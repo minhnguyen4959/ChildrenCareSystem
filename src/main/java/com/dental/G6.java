@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class G3DentalClinicApplication {
+public class G6 {
 
     public static void main(String[] args) {
-        SpringApplication.run(G3DentalClinicApplication.class, args);
+        SpringApplication.run(G6.class, args);
     }
 
 }
